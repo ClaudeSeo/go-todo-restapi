@@ -15,8 +15,8 @@ type DBEnvironment struct {
 }
 
 type WebEnvironment struct {
-    Port int `default: "8080";envconfig:"WEB_PORT"`
-    Host string `default: "127.0.0.1";envconfig:"WEB_HOST"`
+    Port int `default:"8080";envconfig:"WEB_PORT"`
+    Host string `default:"127.0.0.1";envconfig:"WEB_HOST"`
 }
 
 var DBConfig DBEnvironment

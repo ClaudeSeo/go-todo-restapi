@@ -21,7 +21,7 @@ type Task struct {
     Title string 
     Deadline time.Time
     Done bool
-    ProdjctId uint
+    ProjectId uint
 }
 
 func InitDB () *gorm.DB {
@@ -32,7 +32,6 @@ func InitDB () *gorm.DB {
         config.DBConfig.Port,
         config.DBConfig.Name,
     )
-    fmt.Println(uri)
     db, err :=  gorm.Open(config.DBConfig.Dialect, uri)
     if err != nil {
         log.Fatal("Could not connect database")
