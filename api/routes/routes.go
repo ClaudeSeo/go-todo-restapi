@@ -7,4 +7,5 @@ import (
 
 func URLPatterns (r martini.Router) {
     r.Get("/projects", handler.GetProjects)
+    r.Post("/projects", handler.CreateProject)
 }
