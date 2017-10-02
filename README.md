@@ -13,6 +13,7 @@ $ export DB_PASSWORD="password"
 $ export DB_NAME="dbname"
 $ export WEB_PORT="8080"
 $ export WEB_HOST="127.0.0.1"
+$ export MARTINI_ENV=production
 ```
 
 ## Installation & Run
@@ -21,8 +22,9 @@ $ go get github.com/claudeseo/go-todo-restapi
 
 $ go build
 $ ./go-todo-restapi
-[martini] listening on 127.0.0.1:8080 (development)
-
+[martini] listening on 127.0.0.1:8080 (production)
 ```
 
 
+## Reference
+- [Make RESTful API with Go by mingrammer](https://speakerdeck.com/mingrammer/make-restful-api-with-go)

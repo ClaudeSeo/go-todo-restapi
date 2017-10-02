@@ -13,7 +13,7 @@ type Project struct {
     gorm.Model
     Title string 
     Archive bool
-    Tasks []Task `gorm:"ForeignKey:ProdjctId; AssociationForeignKey:Refer"`
+    Tasks []Task `gorm:"ForeignKey:ProdjctId;AssociationForeignKey:Refer"`
 }
 
 type Task struct {
